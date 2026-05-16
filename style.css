@@ -95,6 +95,7 @@ header{
   font-size:24px;
   line-height:1.8;
   margin-bottom:40px;
+  max-width:750px;
 }
 
 /* BOTONES */
@@ -227,17 +228,25 @@ header{
 }
 
 /* ========================= */
-/* TABLET */
+/* LAPTOPS PEQUEÑAS */
 /* ========================= */
 
 @media(max-width:1200px){
 
+  .hero{
+    padding:120px 50px;
+  }
+
   .hero-content h1{
-    font-size:75px;
+    font-size:72px;
   }
 
   .hero-content p{
     font-size:22px;
+  }
+
+  .contenido h1{
+    font-size:58px;
   }
 
   .texto h2{
@@ -245,44 +254,83 @@ header{
   }
 
   .texto p{
-    font-size:21px;
+    font-size:20px;
   }
 
 }
 
 /* ========================= */
-/* TABLET PEQUEÑA */
+/* TABLETS */
 /* ========================= */
 
 @media(max-width:992px){
 
   header{
-    padding:0 30px;
+    height:80px;
+    padding:0 25px;
+  }
+
+  .logo{
+    font-size:34px;
   }
 
   .hero{
-    padding:120px 40px;
+    padding:120px 35px 70px;
   }
 
   .hero-content{
     max-width:100%;
   }
 
+  .hero-content span{
+    font-size:22px;
+  }
+
   .hero-content h1{
-    font-size:60px;
+    font-size:58px;
+    line-height:1.15;
   }
 
   .hero-content p{
     font-size:20px;
+    line-height:1.7;
   }
 
   .fila,
   .reverse{
     flex-direction:column;
+    gap:40px;
+    margin-bottom:80px;
+  }
+
+  .contenido{
+    width:92%;
+  }
+
+  .contenido h1{
+    font-size:52px;
+    margin-bottom:60px;
+  }
+
+  .texto{
+    width:100%;
+  }
+
+  .texto h2{
+    font-size:38px;
+  }
+
+  .texto p{
+    font-size:19px;
+    line-height:1.8;
+  }
+
+  .imagen{
+    width:100%;
   }
 
   .imagen img{
-    height:400px;
+    height:350px;
   }
 
 }
@@ -293,70 +341,93 @@ header{
 
 @media(max-width:768px){
 
+  body{
+    overflow-x:hidden;
+  }
+
   header{
-    height:80px;
-    padding:0 20px;
+    height:75px;
+    padding:0 18px;
   }
 
   .logo{
-    font-size:30px;
+    font-size:28px;
   }
 
   .hero{
-    padding:120px 25px 60px;
-    text-align:center;
+    padding:100px 20px 50px;
+    min-height:auto;
+  }
+
+  .hero-content{
+    width:100%;
   }
 
   .hero-content span{
-    font-size:22px;
+    font-size:18px;
   }
 
   .hero-content h1{
-    font-size:48px;
+    font-size:42px;
+    line-height:1.15;
+    margin:15px 0;
+    word-break:break-word;
   }
 
   .hero-content p{
-    font-size:18px;
+    font-size:17px;
     line-height:1.7;
+    margin-bottom:30px;
   }
 
   .botones{
     flex-direction:column;
-    width:100%;
+    gap:15px;
   }
 
   .botones button{
     width:100%;
     padding:16px;
     font-size:18px;
+    border-radius:10px;
   }
 
   .contenido{
     width:92%;
-    margin-top:120px;
+    margin:110px auto 70px;
   }
 
   .contenido h1{
-    font-size:46px;
+    font-size:40px;
+    margin-bottom:45px;
+    line-height:1.2;
+  }
+
+  .back-btn{
+    font-size:17px;
+    padding:14px 20px;
+    margin-bottom:35px;
+  }
+
+  .fila{
+    gap:30px;
     margin-bottom:60px;
   }
 
   .texto h2{
-    font-size:34px;
+    font-size:30px;
+    line-height:1.2;
   }
 
   .texto p{
-    font-size:18px;
+    font-size:17px;
     line-height:1.8;
   }
 
   .imagen img{
-    height:300px;
-  }
-
-  .back-btn{
-    font-size:18px;
-    padding:14px 22px;
+    width:100%;
+    height:240px;
+    border-radius:18px;
   }
 
 }
@@ -368,40 +439,51 @@ header{
 @media(max-width:480px){
 
   .hero{
-    padding:110px 18px 50px;
-  }
-
-  .hero-content h1{
-    font-size:38px;
-  }
-
-  .hero-content p{
-    font-size:16px;
+    padding:95px 16px 40px;
   }
 
   .hero-content span{
-    font-size:20px;
-  }
-
-  .contenido h1{
-    font-size:38px;
-  }
-
-  .texto h2{
-    font-size:28px;
-  }
-
-  .texto p{
     font-size:16px;
   }
 
-  .imagen img{
-    height:250px;
-    border-radius:18px;
+  .hero-content h1{
+    font-size:34px;
+    line-height:1.1;
+  }
+
+  .hero-content p{
+    font-size:15px;
+    line-height:1.7;
   }
 
   .botones button{
     font-size:16px;
+    padding:14px;
+  }
+
+  .contenido{
+    width:94%;
+  }
+
+  .contenido h1{
+    font-size:34px;
+  }
+
+  .texto h2{
+    font-size:26px;
+  }
+
+  .texto p{
+    font-size:15px;
+  }
+
+  .imagen img{
+    height:210px;
+  }
+
+  .back-btn{
+    width:100%;
+    text-align:center;
   }
 
 }
